@@ -80,8 +80,8 @@ To run the app:
 
 ## Notes
 
-sessionStorage is used to temporarily store user data across pages
-All quizzes follow the same structure; only questions and titles vary
+- sessionStorage is used to temporarily store user data across pages
+- All quizzes follow the same structure; only questions and titles vary
 
 ---
 
