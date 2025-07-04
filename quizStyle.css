@@ -1,0 +1,131 @@
+/* Reset defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Quiz Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Headers */
+.container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+}
+
+.container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Question Options */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #ffffff;
+}
+
+/* Submit Button */
+#submitBtn {
+  background-color: #ffffff;
+  color: #2575fc;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #e2e2e2;
+  transform: scale(1.03);
+}
+
+/* Result Box */
+#result {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+#result p {
+  margin-top: 10px;
+}
+
+/* Return Button */
+#result button {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #2575fc;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#result button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container h1, .container h2 {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  #submitBtn {
+    font-size: 0.95rem;
+  }
+}
+
+

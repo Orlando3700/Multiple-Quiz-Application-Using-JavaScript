@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="title">General Quiz App</h1>
+
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="Your name" />
+
+    <label for="quizSelect">Choose a Quiz:</label>
+    <select id="quizSelect">
+      <option value="quiz1">Math</option>
+      <option value="quiz2">Science</option>
+      <option value="quiz3">History</option>
+    </select>
+
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <script>
+    function startQuiz() {
+      const name = document.getElementById('name').value.trim();
+      const quiz = document.getElementById('quizSelect').value;
+
+      if (!name) {
+        alert('Please enter your name.');
+        return;
+      }
+
+      sessionStorage.setItem('userName', name);
+      sessionStorage.setItem('selectedQuiz', quiz);
+
+      window.location.href = `${quiz}.html`;
+    }
+  </script>
+
+</body>
+</html>
+
+
