@@ -7,17 +7,17 @@ A simple, responsive web-based quiz application built using HTML, CSS, and JavaS
 ## Project Structure
 
 quiz-app/
-index.html           # Main entry point
-quiz1.html           # Math Quiz
-quiz2.html           # Science Quiz
-quiz3.html           # History Quiz
-quiz1.js             # JavaScript for Math Quiz
-quiz2.js             # JavaScript for Science Quiz
-quiz3.js             # JavaScript for History Quiz
-script.js            # Handles index.html logic
-style.css            # Shared styling across all pages
-quizStyle.css        # Shared styling across all quizzes
-README.md            # Project description
+- index.html           # Main entry point
+- quiz1.html           # Math Quiz
+- quiz2.html           # Science Quiz
+- quiz3.html           # History Quiz
+- quiz1.js             # JavaScript for Math Quiz
+- quiz2.js             # JavaScript for Science Quiz
+- quiz3.js             # JavaScript for History Quiz
+- script.js            # Handles index.html logic
+- style.css            # Shared styling across all pages
+- quizStyle.css        # Shared styling across all quizzes
+- README.md            # Project description
 
 ---
 
